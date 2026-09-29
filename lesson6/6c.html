@@ -1,0 +1,23 @@
+<!-- Continuing from 6a, create a variable called 'name' and save your name inside (as a string).
+Update the if-statement to display your name in each message. For example: 'Good morning ${name}!' -->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      const hour = 22;
+      const name = 'Shweta';
+
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good Morning ${name} !`);
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good Afternoon ${name} !`);
+      } else if (hour >= 18 && hour <= 20) {
+        console.log(`Good Evening ${name} !`); 
+      } else {
+        console.log(`Good Night ${name} !`);
+      }
+    </script>
+  </body>
+</html>

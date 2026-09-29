@@ -1,0 +1,30 @@
+<!-- Let's say we're trying to guess the result. Create a variable called
+'guess' and save your guess ('heads' or 'tails').
+If your guess matches the result, display 'You win!' in the console
+If your guess does not match the result, display 'You lose!' -->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      const randomNumber = Math.random();
+      let result;
+
+      if (randomNumber <= 0.5) {
+        result = 'Heads';
+      } else {
+        result = 'Tails';
+      }
+
+      const guess = 'Tails';
+
+      if (guess === result) {
+        console.log('You Win!');
+      } else {
+        console.log('You Lose!');
+      }
+
+    </script>
+  </body>
+</html>
