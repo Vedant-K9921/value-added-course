@@ -1,0 +1,22 @@
+<!--Using bracket notation, add a property 'delivery-time' to the object with the value '3 days'.
+Display the updated object in the console.-->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+    const product = {
+        name: 'basketball',
+        price: 2095
+      };
+      console.log(product);
+
+      product.price += 500;
+      console.log(product);
+
+      product['delivery-time'] = '3 days';
+      console.log(product);
+    </script>
+  </body>
+</html>

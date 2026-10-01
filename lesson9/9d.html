@@ -1,0 +1,20 @@
+<!-- Create a text box (<input>) and a submit button. 
+When clicking 'Submit', display 'Your name is: ${text}' 
+on the page (${text} = the text inside the text box) 
+(hint: use .value to get the text inside an <input>). -->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="js-name-input">
+
+    <button onclick="
+      const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Submit</button>
+
+    <p class="js-message"></p>
+  </body>
+</html>
